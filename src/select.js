@@ -12,7 +12,7 @@ export default class Select extends Component {
   }
 
   bindEvents() {
-    ;[ 'triggerClick', 'listClick', 'docClick' ].forEach(method => {
+    [ 'triggerClick', 'listClick', 'docClick' ].forEach(method => {
       this[method] = this[method].bind(this)
     })
 
