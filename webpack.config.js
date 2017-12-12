@@ -44,6 +44,11 @@ module.exports = {
     new ExtractTextPlugin(`[name]${minExt}.css`),
     new webpack.DefinePlugin({
       VERSION: `'${pkg.version}'`
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
     })
   ],
 
